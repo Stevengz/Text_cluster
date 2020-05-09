@@ -3,7 +3,7 @@ import jieba
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import Birch
 
-data = pd.read_excel('附件3.xlsx')
+data = pd.read_excel('文本数据集.xlsx')
 x = data.留言主题
 
 # 停用词
