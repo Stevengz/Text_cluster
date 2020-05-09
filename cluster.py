@@ -27,7 +27,7 @@ vectorizer = TfidfVectorizer(min_df=2, ngram_range=(1,2), strip_accents='unicode
 X = vectorizer.fit_transform(x_change)
 num_clusters = 390
 birch_cluster = Birch(n_clusters=num_clusters)
-birch_result = birch_clusterer.fit_predict(X)
+birch_result = birch_cluster.fit_predict(X)
 print("Predicting result: ", birch_result)
 
 # 保存
